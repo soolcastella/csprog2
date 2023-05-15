@@ -1,7 +1,6 @@
 /* ここに自分の名前を入れる */
 #include <stdio.h>
 
-/* 関数のプロトタイプ宣言 */
 void shift_num(int *num1, int *num2, int *num3);
 
 int main(void)
@@ -23,5 +22,9 @@ int main(void)
 
 void shift_num(int *num1, int *num2, int *num3)
 {
-
+    int *i;
+    i = num3;
+    num3 = num2;
+    num2 = num1;
+    num1 = i;
 }
